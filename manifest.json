@@ -9,19 +9,14 @@
   "background_color": "#ffffff",
   "theme_color": "#0056b3",
   "orientation": "portrait",
-  "lang": "en",
+  "lang": "ur",
   "dir": "ltr",
   "icons": [
     {
-      "src": "icon.png",
-      "sizes": "192x192",
+      "src": "images/icon.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
-    },
-    {
-      "src": "icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
   ]
 }
