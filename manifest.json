@@ -1,0 +1,27 @@
+{
+  "name": "Star Refrigeration Sales & Service",
+  "short_name": "Star Ref",
+  "description": "Fridge & AC Spare Parts and Repair Services in Malkapur",
+  "start_url": "/star-refrigration/",
+  "id": "/star-refrigration/",
+  "scope": "/star-refrigration/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0056b3",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

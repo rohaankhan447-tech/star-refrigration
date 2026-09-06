@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Refrigeration Sales & Service</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA Manifest Link -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0056b3">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="app-header">
+        <h1>Star Refrigeration</h1>
+        <p>Sales & Service | Fridge & AC Repair in Malkapur</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        
+        <!-- Services Section -->
+        <section class="card">
+            <h2>Our Professional Services</h2>
+            <ul>
+                <li>❄️ Refrigerator Repair & Gas Filling</li>
+                <li>🧊 AC Installation, Servicing & Repair</li>
+                <li>🔧 Original Fridge & AC Spare Parts</li>
+                <li>⚡ Quick Doorstep Technician Support</li>
+            </ul>
+        </section>
+
+        <!-- Action Buttons / Contact Section -->
+        <section class="card action-card">
+            <h2>Book a Service Instantly</h2>
+            <div class="btn-group">
+                <a href="tel:9922055143" class="btn call-btn">📞 Call Now</a>
+                <a href="https://wa.me/919922055143?text=Hello%20Star%20Refrigeration,%20I%20need%20repair%20service." target="_blank" class="btn whatsapp-btn">💬 WhatsApp Us</a>
+            </div>
+        </section>
+
+        <!-- Location & Timings Section -->
+        <section class="card">
+            <h2>Location & Timing</h2>
+            <p><strong>Address:</strong> Near Chandak School, Shaheed Abdul Hamid Chowk, Malkapur, Dist. Buldhana, Maharashtra - 443101</p>
+            <p><strong>Contact Numbers:</strong> 9922055143, 8668814303</p>
+            <p><strong>Working Hours:</strong> Monday - Sunday (9:00 AM - 8:00 PM)</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <p>&copy; 2026 Star Refrigeration. All rights reserved.</p>
+    </footer>
+
+    <!-- Service Worker Registration Script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js')
+            .then((reg) => console.log('Service Worker registered! Scope:', reg.scope))
+            .catch((err) => console.log('Service Worker registration failed:', err));
+        });
+      }
+    </script>
+
+</body>
+</html>
