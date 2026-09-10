@@ -9,12 +9,18 @@
     --ig-gradient: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+body{
+    /* Image path (images folder ke andar) */
+    background-image: url('images/bg-banner.png'); 
+    
+    /* Perfect fit aur size ratio ke liye */
+    background-size: 100% auto;          /* Full width aur natural height maintain karega */
+    background-position: top center;     /* Top se align rakhega */
+    background-repeat: no-repeat;        /* Image repeat nahi hogi */
+    background-attachment: scroll;       /* Standard scroll behavior */
+    
     margin: 0;
     padding: 0;
-    background-color: var(--ig-bg);
-    color: var(--ig-text);
 }
 
 /* Instagram Header with Gradient Touch */
