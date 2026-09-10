@@ -176,3 +176,57 @@ div[class*="container"] > div {
     margin-top: 20px;
     border-top: 1px solid var(--ig-border);
 }
+/* Sticky Bottom Bar for Mobile */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff !important;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+.call-btn {
+    background-color: #0084ff;
+}
+
+.wa-btn {
+    background-color: #25d366;
+}
+
+/* Bottom spacing overhead to prevent content overlapping */
+body {
+    padding-bottom: 70px !important;
+}
+.map-btn {
+    display: inline-block;
+    background-color: #4285F4;
+    color: #ffffff !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(66, 133, 244, 0.3);
+}
