@@ -9,19 +9,54 @@
     --ig-gradient: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
-body{
-    /* Image path (images folder ke andar) */
-    background-image: url('images/bg-banner.png'); 
-    
-    /* Perfect fit aur size ratio ke liye */
-    background-size: 100% auto;          /* Full width aur natural height maintain karega */
-    background-position: top center;     /* Top se align rakhega */
-    background-repeat: no-repeat;        /* Image repeat nahi hogi */
-    background-attachment: scroll;       /* Standard scroll behavior */
-    
+body {
+    background-image: url('images/bg-banner.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
 }
+
+/* Card Styling - Mobile par saaf aur readable dikhane ke liye */
+.card, 
+div[class*="container"] > div {
+    background: rgba(255, 255, 255, 0.94) !important; /* Thoda solid white blend */
+    backdrop-filter: blur(8px);                        /* Subtle glass blur */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 90%;
+}
+
+/* Mobile Screen Specific Responsiveness (Media Query) */
+@media screen and (max-width: 768px) {
+    body {
+        /* Mobile vertical screen ke hisab se image align rahegi */
+        background-position: center top;
+        background-size: cover;
+        background-attachment: scroll; /* Mobile smooth scroll performance */
+    }
+
+    .card, 
+    div[class*="container"] > div {
+        max-width: 92%;
+        margin: 12px auto;
+        padding: 16px;
+    }
+
+    /* Buttons layout mobile optimization */
+    .btn, button, a[href*="tel"], a[href*="wa.me"] {
+        font-size: 15px;
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+}
+
 
 /* Instagram Header with Gradient Touch */
 .app-header {
